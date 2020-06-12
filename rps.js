@@ -26,13 +26,11 @@ else if (playerSelection == 'piedra' && computerSelection=='tijera' ||
          return 'ganaste ' + playerSelection+ ' beats '+ computerSelection
          }
          
-   
  else {
     scoreComputer=scoreComputer+1
     return 'Perdiste ' + computerSelection + ' beats '+ playerSelection
  }
  
-
 }
 
 function game(){
@@ -57,7 +55,6 @@ function verificarScore(scorePlayer,scoreComputer){
     else 
     alert ('Empate!')
 }
-
 
  game();
          

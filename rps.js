@@ -42,9 +42,22 @@ function game(){
         playerSelection = playerSelection.toLowerCase()
         const computerSelection = computerPlay()
         console.log(playRound(playerSelection, computerSelection))
-
     }
+     verificarScore(scorePlayer, scoreComputer);
 }
+
+function verificarScore(scorePlayer,scoreComputer){
+
+    if (scorePlayer < scoreComputer)
+    alert('You Lose!, Computer Obtuvo'+ scoreComputer + 'y tu obtuviste '+scorePlayer)
+
+    else if (scorePlayer > scoreComputer)
+    alert ('You win!, Obtuviste'+ scorePlayer + 'y la computadora obtuvo '+scoreComputer)
+    
+    else 
+    alert ('Empate!')
+}
+
 
  game();
          
